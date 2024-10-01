@@ -91,7 +91,7 @@ void heap_insert(heap_t *heap, heap_key_t key, heap_value_t data) {
 
 void heap_print(heap_t *heap) {
     for (int i = 0; i < heap->size; i++) {
-        printf("%d ", heap->data[i].key);
+        printf("%llu ", heap->data[i].key);
     }
     printf("\n");
 }
